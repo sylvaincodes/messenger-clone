@@ -7,7 +7,7 @@ export const CtaTwo = () => {
         <motion.section
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, type: "tween" }}
+            transition={{ duration: 0.8, type: "tween" }}
             className="pt-20">
             <div className="relative">
                 <Image

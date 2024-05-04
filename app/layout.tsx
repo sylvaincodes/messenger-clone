@@ -1,7 +1,7 @@
 import "./globals.css";
-import { SeoGlobal } from '@/components/ui/seo-global'
 import { cn } from "@/lib/utils";
 import { fontJosefin } from "./fonts";
+import Providers from "@/providers";
 
 
 export default function RootLayout({
@@ -12,7 +12,13 @@ export default function RootLayout({
 
   return (
     <html lang="fr">
-      <body className={cn('min-h-screen relative', fontJosefin.className)}>{children}</body>
+      <body className={cn('min-h-screen relative', fontJosefin.className)}>
+
+        <Providers>
+          {children}
+        </Providers>
+
+      </body>
     </html>
   );
 

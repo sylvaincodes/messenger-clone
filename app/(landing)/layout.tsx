@@ -13,7 +13,6 @@ export default function Layout({
     <>
       <div className="relative"
       >
-        <HeaderOne />
         <HeroOne />
       </div>
       {children}

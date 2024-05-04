@@ -1,4 +1,4 @@
-# Project Description
+# Messenger Clone : Build A Real Time Messenger Clone With NextJs 14 - React18 - Prisma - mongoDb NextAuth.
 
 This is a real time messenger clone. use it to master your skills in Next js and IMPROVE YOUR PORTFOLIO.
 
@@ -18,7 +18,7 @@ Core features
 - [ Learn how to setup Prisma with Next js ]
 - [ Learn how to setup Mongo DB with next Js ]
 
-Messenger Clone : Build A Real Time Messenger Clone With NextJs 14 - React18 - Prisma - mongoDb NextAuth.
+
 
 ## Quick start
 
@@ -26,12 +26,18 @@ To spin up this example locally, follow these steps:
 
 ### Clone
 
-  Use the `create-payload-app` CLI to clone this template directly to your machine:
+  Use the `git clone` CLI to clone this template directly to your machine:
 
     git clone https://github.com/sylvaincodes/messenger-clone.git
 
 ### Set up env file
 
+0. You will first need to setup Next js  [Next js](https://nextjs.org/docs/getting-started/installation) 
+
+```bash
+   NEXT_PUBLIC_BASE_URL=
+   ```
+   
 1. You will first need to setup prisma [Prisma](https://www.prisma.io/docs/getting-started) 
 
 ```bash
@@ -60,6 +66,8 @@ To spin up this example locally, follow these steps:
 ## Project Dev Step 
 
 1. Environment Setup
+    - Install Nextjs project
+    - Install Radix - framer motion
 2. Project Folder Structure
 3. Landing Page
     -   SEO 
@@ -72,9 +80,9 @@ To spin up this example locally, follow these steps:
 7. Setup Home Layout ( Navigation - Navbar )
 8. Setup User conversations UI
 9. Create User Post ( Message - Image )
-10. Progil Drawer
-11. Setting 
-12. Group chat
+10. Create Profil Drawer
+11. Settings Messages 
+12. Setting Group chat
 13. Real time message with Pusher
 
 

@@ -94,6 +94,10 @@ module.exports = {
 
     extend: {
 
+      backgroundImage: {
+        'hero-pattern': "url('https://images.pexels.com/photos/3774903/pexels-photo-3774903.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260')",
+        'cta-pattern': "url('https://images.pexels.com/photos/3184419/pexels-photo-3184419.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260')",
+      },
 
       keyframes: {
 
