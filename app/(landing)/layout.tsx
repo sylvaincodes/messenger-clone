@@ -1,3 +1,4 @@
+"use client"
 import { FooterOne } from "@/components/wrappers/footer/footer-one";
 import { HeaderOne } from "@/components/wrappers/header/header-one";
 import { HeroOne } from "@/components/wrappers/hero/hero-one";
@@ -10,7 +11,8 @@ export default function Layout({
 }>) {
   return (
     <>
-      <div className="relative">
+      <div className="relative"
+      >
         <HeaderOne />
         <HeroOne />
       </div>

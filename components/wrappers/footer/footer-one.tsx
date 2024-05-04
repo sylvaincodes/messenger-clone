@@ -11,9 +11,9 @@ export const FooterOne = () => {
 
         <motion.footer
             initial={{
-                y: 100
+                opacity: 0
             }}
-            whileInView={{ y: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1, type: "tween" }}
 
             className="bg-white dark:bg-gray-900 border dark:border-0 py-10">
