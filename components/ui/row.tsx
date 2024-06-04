@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Row = ({ children, className }: { children: React.ReactNode; className?: string }) => {
     return (
-        <div className={cn('flex h-full w-full', className)}>
+        <div className={cn('flex items-center h-full w-full', className)}>
             {children}
         </div>
     )

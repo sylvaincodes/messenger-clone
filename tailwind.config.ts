@@ -27,7 +27,7 @@ module.exports = {
         md: '2rem',
         lg: '2rem',
         xl: '2rem',
-        '2xl': '2rem',
+        '2xl': '4rem',
       },
       screens: {
         'xs': '320px', // => @media (min-width: 320px){ ... }
@@ -45,6 +45,7 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       gray: colors.gray,
+      green: colors.green,
       sky: colors.sky,
       black: colors.black,
       white: colors.white,
@@ -53,6 +54,7 @@ module.exports = {
       yellow: colors.yellow,
       slate: colors.slate,
       blue: colors.blue,
+      red: colors.red,
       neutral: colors.neutral,
 
       primary: "#448aff",
@@ -61,7 +63,7 @@ module.exports = {
 
     },
 
-    // fonts 
+    // fonts size
     fontSize: {
       sm: '0.8rem',
       base: '1rem',
@@ -75,7 +77,7 @@ module.exports = {
         lineHeight: '1.3',
       }],
 
-      '5xl': ['3.052rem', {
+      '5xl': ['5.052rem', {
         fontWeight: '700',
         letterSpacing: '-0.1em',
         lineHeight: '1.2'
@@ -83,13 +85,10 @@ module.exports = {
       '6xl': ['5rem', {
         fontWeight: '700',
         letterSpacing: '-0.1em',
-        lineHeight: '1'
+        lineHeight: '1.5'
       }
 
       ]
-    },
-    lineHeight: {
-      'extra-loose': '2',
     },
 
     extend: {
@@ -112,6 +111,15 @@ module.exports = {
           '100%': { transform: 'rotate(0.0deg)' },
         },
 
+        "loading": {
+          '0%': { opacity: "0" },
+          '10%': { height: "0.1" },
+          '20%': { height: "0.2" },
+          '50%': { height: "0.5" },
+          '70%': { height: "0.7" },
+          '100%': { height: "1" },
+        },
+
         "updown": {
           from: { transform: 'scale(1)' },
           to: { transform: 'scale(1.2)' },
@@ -121,6 +129,7 @@ module.exports = {
       animation: {
         'waving-hand': 'wave 2s linear infinite',
         'updown': 'updown 1s linear infinite',
+        "loading-transition": "loading 1s ease-in-out",
       },
     },
   },

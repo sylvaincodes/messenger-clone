@@ -1,20 +1,22 @@
-# Messenger Clone : Build A Real Time Messenger Clone With NextJs 14 - React18 - Prisma - mongoDb NextAuth.
+# Messenger Clone : Build The Real Messenger Clone | Next Js 14, React 18, Tailwind CSS, Next Auth, Prisma,Mongo, Pusher (2024) 
 
-This is a real time messenger clone. use it to master your skills in Next js and IMPROVE YOUR PORTFOLIO.
+This is the only one real messenger clone. use it to master your skills in Next js for free.
 
 This course is right for you if you:
 
-- are new to next js
-- want a free course tutorial
+## Our goals:
 
-Core features
+- Build beautiful frontend design ui
+- Make high quality code 
+
+
+## Core features
 
 - [ Learn how to start a next js project from scratch ]
 - [ Learn how to set up SEO to next js project ]
 - [ Learn how to set up a authentification with next js from scracth ]
 - [ Learn how to setup Tailwind Css with Next js ]
 - [ Learn how to build react components with tailwind and framer motion ]
-- [ Learn real time push message wwith Pusher ]
 - [ Learn how to setup Prisma with Next js ]
 - [ Learn how to setup Mongo DB with next Js ]
 
@@ -35,25 +37,52 @@ To spin up this example locally, follow these steps:
 0. You will first need to setup Next js  [Next js](https://nextjs.org/docs/getting-started/installation) 
 
 ```bash
-   NEXT_PUBLIC_BASE_URL=
+   NEXT_PUBLIC_SEVER_URL=
    ```
    
-1. You will first need to setup prisma [Prisma](https://www.prisma.io/docs/getting-started) 
+1. You will need prisma query [Prisma](https://www.prisma.io/docs/getting-started) 
 
-```bash
-   NEXT_PUBLIC_PRISMA_KEY=
-   ```
 
 2. You will need to setup mongo db  [MongoDb](https://account.mongodb.com/account/login) 
 
 ```bash
-   NEXT_PUBLIC_MONGO_DB_DATABASE_URL=
+   DATABASE_URL=
    ```
 
 3. You will need to setup pusher  [Pusher](https://pusher.com)
 
 ```bash
-   NEXT_PUBLIC_PUHSER_KEY=
+   PUHSER_KEY=
+   ```
+   
+4. You will need to setup NEXT AUTH  [NextAuth](https://nextauth.com)
+   
+   ```bash
+
+   NEXTAUTH_SECRET=
+
+   ```
+
+
+   
+5. You will need to setup Github App [Github](https://github.com/settings/applications/new)
+
+```bash
+
+   GITHUB_ID= 
+   GITHUB_SECRET=
+
+
+   ```
+   
+6. You will need to setup Google App [Github](https://console.cloud.google.com/welcome)
+
+```bash
+
+   GOOGLE_CLIENT_ID= 
+   GOOGLE_CLIENT_SECRET=
+
+
    ```
 
 ### Run Project on local
@@ -67,16 +96,47 @@ To spin up this example locally, follow these steps:
 
 1. Environment Setup
     - Install Nextjs project
-    - Install Radix - framer motion
+    - Install Radix - shadcn
+
 2. Project Folder Structure
+
 3. Landing Page
     -   SEO 
     -   SMO
     -   Container - Colors - Fonts 
     -   UI template ( Header - Hero - Main - Footer )
-4. Setup Next Auth UI
-5. Setup Mongo DB
-6. Test Next Auth Submit
+
+4. Setup Auth UI
+  
+      ```bash
+
+         npm i next-auth@latest
+         npm i next-auth@prisma-adapter 
+         npm i -D @types/bcrypt 
+         npm i bcrypt
+         npx auth secret
+
+         ```
+
+5. Setup Prisma and Mongo DB 
+      
+      ```bash
+         npm i -D prisma && npx prisma init
+         npm install mongodb
+         npx prisma db push
+         npm @prisma/client
+      ```
+6. Setup Next Auth API
+
+      ```bash
+         npm i next-auth@latest @next-auth/prisma-adapter bcrypt
+         npm i -D @types/bcrypt
+         
+      ```
+    - Register an Github app for GITHUB ID  https://github.com/settings/applications/new
+    - Test Register API
+    - Test Login API 
+
 7. Setup Home Layout ( Navigation - Navbar )
 8. Setup User conversations UI
 9. Create User Post ( Message - Image )
